@@ -26,10 +26,12 @@ var Name = null
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+
 const route = (e) => {
-  e = e || window.Event;
-  e.preventDefault();
+  e = e || window.e;
   window.history.pushState({}, '', e.target.href)
+  console.log('here2')
+  e.preventDefault();
   handleLocation()
 }
 
@@ -46,14 +48,16 @@ const handleLocation = async () => {
   if (path === "/login") {
     email = document.querySelector('#email')
     password = document.querySelector('#password')
-
+    const button = document.querySelector('#link-register')
+    button.addEventListener('click', (e) => { e.preventDefault(); window.history.pushState({}, '', '/register'); handleLocation() })
   }
   else if (path === "/register") {
     email = document.querySelector('#email')
     displayName = document.querySelector('#login')
     password = document.querySelector('#password')
     confirm_password = document.querySelector('#confirm-password')
-
+    const button = document.querySelector('#link-login')
+    button.addEventListener('click', (e) => { e.preventDefault(); window.history.pushState({}, '', '/login'); handleLocation() })
   }
   else {
     Name = document.querySelector('#name')
@@ -148,6 +152,7 @@ const checkAuthState = async () => {
 window.onpopstate = handleLocation;
 window.route = route;
 window.addEventListener("submit", submit)
+
 
 checkAuthState();
 handleLocation();
