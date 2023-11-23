@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+
+
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 100dvw;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header div a {
+    text-decoration: none;
+    color: black
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90dvh;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.hello {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#name {
+    color: rgb(129, 129, 129);
+    text-decoration: underline;
+}
+
+.container-auth {
+
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 505px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 0.5px solid #878787;
+    box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.05);
+}
+
+.container-auth-welcome {
+    color: #000;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+    width: 100%;
+}
+
+.container-auth-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-auth-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.container-auth-subtext {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container-auth form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-auth form label {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.container-auth form input[type=text] {
+    height: 59px;
+    width: 100%;
+    border-radius: 6px;
+    border: 0.6px solid #282828;
+    background: #FFF;
+    margin-bottom: 40px;
+    padding-left: 25px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    box-sizing: border-box;
+}
+
+.container-auth form input[type=password] {
+    height: 59px;
+    width: 100%;
+    border-radius: 6px;
+    border: 0.6px solid #282828;
+    background: #FFF;
+    margin-bottom: 40px;
+    padding-left: 25px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    box-sizing: border-box;
+}
+
+.container-auth form input::placeholder {
+    color: #ABABAB;
+}
+
+.container-auth form input[type=email] {
+    height: 59px;
+    width: 100%;
+    border-radius: 6px;
+    border: 0.6px solid #282828;
+    background: #FFF;
+    margin-bottom: 40px;
+    padding-left: 25px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    box-sizing: border-box;
+}
+
+.container-auth form input[type=submit] {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    height: 59px;
+    border-radius: 6px;
+    background: #000;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.container-auth form div {
+    color: #7D7D7D;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.container-auth form div a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000
+}
+
+.container-auth-img {
+    margin-left: 100px;
+    background: url(../assets/images/login.png);
+    width: 570px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#loginout {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    height: 59px;
+    border-radius: 6px;
+    background: #000;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .container-auth-img {
+        display: none;
+    }
+
+    .container {
+        height: max-content;
+        padding-bottom: 50px;
+    }
+
+    .container-auth {
+        margin-top: 100px;
+        width: 100%;
+        height: min-content
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .container-auth-img {
+        display: none;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 50px;
+        height: max-content;
+    }
+
+    .container-auth {
+        width: 100%;
+        height: min-content
+    }
+
+}
+
+@media screen and (max-height: 1200px) {
+    .container-auth {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        gap: 10px;
+    }
+
+    .container-auth form label {
+        margin-bottom: 0;
+    }
+
+    .container-auth form input {
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+    }
+}
